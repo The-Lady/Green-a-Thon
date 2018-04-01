@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
@@ -15,59 +15,84 @@
 <body style="height:100%;">
     <div>
         <nav class="navbar navbar-dark navbar-expand-md bg-dark navigation-clean">
-            <div class="container"><a class="navbar-brand" href="#" style="color:#ffffff;">Air Pollution Control Board</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container"><a class="navbar-brand" href="#" style="color:#ffffff;background-color:rgba(255,255,255,0);">Air Pollution Control Board</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Government</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">User</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="gov-log.html" style="background-color:rgba(255,255,255,0);">Government</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" style="background-color:rgba(255,255,255,0);">User</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Services</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#car">Information</a><a class="dropdown-item" role="presentation" href="#trend">Recent Trends</a><a class="dropdown-item" role="presentation" href="#map">AQI Map</a><a class="dropdown-item"
+                                    role="presentation" href="#map">Health Risk Advice</a><a class="dropdown-item" role="presentation" href="#comp">Complaints</a></div>
+                        </li>
                     </ul>
             </div>
     </div>
     </nav>
     </div>
-    <div class="carousel slide" data-ride="carousel" id="carousel-1">
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active"><img class="w-100 d-block" src="http://placeholdit.imgix.net/~text?txtsize=42&amp;txt=Carousel+Image&amp;w=1400&amp;h=600" alt="Slide Image">
-                <div class="carousel-caption">
-                    <p>Slide Caption</p>
+    <div class="container" id="car" style="padding:0 20px;padding-right:20px;">
+        <div class="carousel slide" data-ride="carousel" id="carousel-1">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" style="background-image:url(&quot;assets/img/e46ccb88495944268126b4dfb4da37ca.jpg&quot;);"><img class="img-fluid w-100 d-block" src="assets/img/e46ccb88495944268126b4dfb4da37ca.jpg" alt="Slide Image">
+                    <div class="carousel-caption">
+                        <p style="color:#282821;font-size:20px;">Air pollution in India is a serious issue with the major sources being fuelwood and biomass burning, fuel adulteration, vehicle emission and traffic congestion.The Air (Prevention and Control of Pollution) Act was passed in 1981
+                            to regulate air pollution.<br></p>
+                    </div>
+                </div>
+                <div class="carousel-item"><img class="img-fluid w-100 d-block" src="assets/img/NBT-image.jpg" alt="Slide Image">
+                    <div class="carousel-caption">
+                        <p style="color:#f4ed47;font-size:19px;"><br>The National Air Monitoring Programme (NAMP) has been established with objectives to determine the present air quality status and trends and to control and regulate pollution from industries and other source to meet the air
+                            quality standards. It also provides background air quality data needed for industrial siting and towns planning.<br></p>
+                    </div>
+                </div>
+                <div class="carousel-item"><img class="img-fluid w-100 d-block" src="assets/img/pollution-kzGD--621x414@LiveMint.jpg" alt="Slide Image">
+                    <div class="carousel-caption">
+                        <p style="color:#f2ef87;font-size:19px;"><br>The Rajasthan State Pollution Control Board is a body corporate constituted under section 4 of the Water (Prevention and Control of Pollution) Act, 1974. It was first constituted on 7th February 1975, with the objectives of
+                            prevention, and control of water pollution and maintaining or restoring of wholesomeness of water.<br></p>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item"><img class="w-100 d-block" src="http://placeholdit.imgix.net/~text?txtsize=42&amp;txt=Carousel+Image&amp;w=1400&amp;h=600" alt="Slide Image"></div>
-            <div class="carousel-item"><img class="w-100 d-block" src="http://placeholdit.imgix.net/~text?txtsize=42&amp;txt=Carousel+Image&amp;w=1400&amp;h=600" alt="Slide Image"></div>
-        </div>
-        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
-        <ol
-            class="carousel-indicators">
-            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-1" data-slide-to="1"></li>
-            <li data-target="#carousel-1" data-slide-to="2"></li>
+            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev" style="background-color:rgba(255,255,255,0);"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next"
+                    href="#carousel-1" role="button" data-slide="next" style="background-color:rgba(255,255,255,0);"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                <li data-target="#carousel-1" data-slide-to="2"></li>
             </ol>
-    </div>
-    <div style="height:100%;">
-        <h1 class="text-center page-heading">Heading</h1>
-        <div class="container">
-            <div class="row user-list">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 user-item">
-                    <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
-                        <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p><a href="#" class="user-delete"> <i class="fa fa-remove"></i></a></div>
-                    <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
-                        <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p><a href="#" class="user-delete"> <i class="fa fa-remove"></i></a></div>
-                    <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
-                        <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p><a href="#" class="user-delete"> <i class="fa fa-remove"></i></a></div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 offset-xl-2 user-item">
-                    <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
-                        <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p><a href="#" class="user-delete"> <i class="fa fa-remove"></i></a></div>
-                    <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
-                        <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p><a href="#" class="user-delete"> <i class="fa fa-remove"></i></a></div>
-                    <div class="user-container"><a href="#" class="user-avatar"><img class="rounded-circle img-fluid" src="assets/img/avatar.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
-                        <p class="user-name"><a href="#">Mark Smith Peterson</a><span>Last seen on 27th Sep 2014 </span></p><a href="#" class="user-delete"> <i class="fa fa-remove"></i></a></div>
-                </div>
-            </div>
         </div>
     </div>
-    <div style="background-color:#e8f1ff;height:100%;">
+    <div id="trend" style="min-height:100%;">
+        <h1 class="text-center page-heading">Recent Trends</h1>
+        <div class="container">
+            <div class="row flex-wrap user-list">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 offset-lg-10 user-item" style="margin:0px 80px;margin-right:80px;margin-top:0;margin-bottom:0;margin-left:0;">
+                    <div class="user-container"><a href="#" class="user-avatar" style="background-color:rgba(255,255,255,0);"><img class="rounded-circle img-fluid" src="assets/img/1.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                        <p class="user-name"><a href="#">State1</a><span>AQI:&nbsp;</span></p>
+                    </div>
+                    <div class="user-container"><a href="#" class="user-avatar" style="background-color:rgba(255,0,0,0);"><img class="rounded-circle img-fluid" src="assets/img/2.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                        <p class="user-name"><a href="#">State2</a><span>AQI:&nbsp;</span></p>
+                    </div>
+                    <div class="user-container"><a href="#" class="user-avatar" style="background-color:rgba(255,255,255,0);"><img class="rounded-circle img-fluid" src="assets/img/3.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                        <p class="user-name"><a href="#">State3</a><span>AQI:&nbsp;</span></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 offset-lg-2 offset-xl-2 user-item">
+                    <div class="user-container"><a href="#" class="user-avatar" style="background-color:rgba(255,255,255,0);"><img class="rounded-circle img-fluid" src="assets/img/1.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                        <p class="user-name"><a href="#">City1</a><span>AQI:&nbsp;</span></p>
+                    </div>
+                    <div class="user-container"><a href="#" class="user-avatar" style="background-color:rgba(255,255,255,0);"><img class="rounded-circle img-fluid" src="assets/img/2.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                        <p class="user-name"><a href="#">City2</a><span>AQI:&nbsp;</span></p>
+                    </div>
+                    <div class="user-container"><a href="#" class="user-avatar" style="background-color:rgba(255,255,255,0);"><img class="rounded-circle img-fluid" src="assets/img/3.jpg" alt="Profile of Mark Smith Peterson" width="48" height="48"></a>
+                        <p class="user-name"><a href="#">City3</a><span>AQI:&nbsp;</span></p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-center page-heading" style="margin-bottom:0px;">Air Quality Index</h1>
+        </div>
+    </div>
+    <div id="map" style="height:100%;"></div>
+    <div id="comp" style="background-color:#e8f1ff;height:100%;">
         <div class="container">
             <h1 class="text-center page-heading">Complaints</h1>
             <div class="row">
@@ -78,7 +103,9 @@
                         <div class="form-group"><input class="form-control" type="text" placeholder="Phone"></div>
                         <div class="form-group"><input class="form-control" type="text" placeholder="Complaint"></div>
                         <div class="form-group"><textarea class="form-control" rows="4" placeholder="Description"></textarea></div>
-                    </form><input type="file" accept="image/*" required=""></div>
+                    </form><input type="file" accept="image/*" required="" style="width:538px;">
+                    <div class="form-group" style="margin-top:10px;padding:8px 16px;"><button class="btn btn-primary" type="submit" style="padding:8px 16px;">Submit</button></div>
+                </div>
             </div>
         </div>
     </div>
@@ -87,36 +114,57 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-4 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
                         <h3>About</h3>
                         <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Legacy</a></li>
+                            <li><a href="#" style="background-color:rgba(255,255,255,0);">Control Board</a></li>
+                            <li><a href="#">Vision</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
                         <h3>Careers</h3>
                         <ul>
-                            <li><a href="#">Job openings</a></li>
-                            <li><a href="#">Employee success</a></li>
-                            <li><a href="#">Benefits</a></li>
+                            <li><a href="#" style="background-color:rgba(255,255,255,0);">Job openings</a></li>
+                            <li><a href="#" style="background-color:rgba(255,255,255,0);">Employee success</a></li>
+                            <li><a href="#" style="background-color:rgba(255,255,255,0);">Benefits</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                        <p class="copyright">Company Name © 2017</p>
+                    <div class="col-lg-3 item social"><a href="#" style="background-color:rgba(255,255,255,0);"><i class="icon ion-social-facebook"></i></a><a href="#" style="background-color:rgba(255,255,255,0);"><i class="icon ion-social-twitter"></i></a><a href="#" style="background-color:rgba(255,255,255,0);"><i class="icon ion-social-snapchat"></i></a>
+                        <a
+                            href="#" style="background-color:rgba(255,255,255,0);"><i class="icon ion-social-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </footer>
-    </div>
+    </div> <script>
+
+      // This example requires the Visualization library. Include the libraries=visualization
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=visualization">
+
+      var map, heatmap;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: {lat: 24.571270, lng: 73.691544},
+          mapTypeId: 'satellite'
+        });
+
+        heatmap = new google.maps.visualization.HeatmapLayer({
+          data: getPoints(),
+          map: map
+        });
+      }
+      function getPoints() {
+        return [
+          new google.maps.LatLng(24.571270, 73.691544),
+        ];
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvjZ8kkirkV6GmbVuN9U9PmWa6BWX4FXo&libraries=visualization&callback=initMap">
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
